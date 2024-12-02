@@ -1,0 +1,617 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: #007b7f;
+}
+
+/* Estilos para el header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  padding: 1px 20px; /* el 1px es el espacio de abajo*/
+}
+/* Estilos para el logo */
+.logo img {
+  width: 90px; /* Ajusta según el tamaño de tu logo */
+  height: auto;
+  object-fit: cover; /* Ajusta la imagen para que se recorte adecuadamente */
+  border-radius: 50%; /* Redondea la imagen para que se vea como un círculo */
+}
+.tituloLogo {
+  font-size: 60px;
+  text-align: left;
+  color: cadetblue;
+}
+/* Estilos para el menú de navegación */
+nav ul {
+  list-style-type: none;
+  display: flex;
+}
+nav ul li {
+  margin-left: 40px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  padding: 5px 10px;
+  transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+  background-color: #555;
+  border-radius: 30px;
+}
+
+/* -------------------------------------------- Contenedor principal del Section one   */
+.section-one {
+  display: flex;
+  background-image: url(/img/background.jpg);
+  padding-bottom: 14px;
+}
+
+/* Estilos para el texto principal */
+.article-1 h1 {
+    font-size: 60px;
+    color: #080000;
+    text-align: left;
+    padding: 0px;
+}
+/* Estilos para article-1 */
+.article-1 {
+    padding: 20px;    /* Espaciado alrededor del contenido */
+    background-color: #f9f9f9; /* Fondo claro para destacar el artículo */
+    border: 1px solid #ddd; /* Un borde sutil alrededor del artículo */
+    margin-top: 20px; /* Separación entre section-1 y article-1 */
+    border-radius: 8px; /* Bordes redondeados */
+}
+
+.article-1 h2 {
+    font-size: 1.5rem;  /* Tamaño del título del artículo */
+    margin-bottom: 15px; /* Espacio debajo del título */
+}
+
+.article-1 p {
+    font-size: 1rem;   /* Tamaño del texto del párrafo */
+    line-height: 1.6;   /* Espaciado entre líneas para mayor legibilidad */
+    color: #555;        /* Color de texto gris oscuro */
+}
+
+.section-3-logo{
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+ }
+
+/* Estilos para el logo (puedes ajustarlo según necesites) */
+.section-3-logo img {
+  max-width: 50%;
+}
+
+/* ---------------------------------------------------------------     Estilos para la sección "Nosotros" */
+#nosotros {
+    padding: 20px;
+    background-color: #f9f9f9;
+    display: grid;
+    }
+  
+  /* Estilos para las cards */
+  .card-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Dos columnas para las cards */
+    gap: 20px; /* Espacio entre las cards */
+    grid-column: span 4; /* Las cards ocuparán todo el ancho disponible */
+    margin-top: 20px;
+  }
+  
+  /* Estilos individuales de cada card */
+  .card {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .mi-perfil {
+    background-color: #e9f7f6; /* Fondo suave para "Mi perfil" */
+  }
+  
+  h2, h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 15px;
+  }
+  
+  p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
+  }
+  
+  /* Asegura que las cards tengan un aspecto uniforme */
+  .card h3 {
+    margin-top: 0;
+    color: #007b7f;
+  }
+  
+  .card p {
+    font-size: 0.95rem;
+    color: #666;
+  }
+  
+  /* Estilo del contenedor principal */
+  #nosotros h2 {
+    grid-column: span 4; /* El título "Nosotros" ocupa todo el ancho de las 4 columnas */
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  #nosotros p {
+    grid-column: span 4; /* Los párrafos ocupan el ancho completo de las 4 columnas */
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+  }
+
+  /* Contenedor de la sección de video */
+.video-section {
+    display: flex;                   /* Usamos flexbox para centrar el video */
+    justify-content: center;          /* Centra el video horizontalmente */
+    align-items: center;              /* Centra el video verticalmente */
+    height: 100vh;                    /* El contenedor ocupa el 100% de la altura de la pantalla */
+    background-color: #f0f0f0;        /* Fondo suave para el área del video */
+    padding: 20px;                    /* Espaciado interno */
+    box-sizing: border-box;           /* Asegura que el padding no afecte el tamaño total */
+  }
+  
+  /* Estilos para el video */
+  .video-section video {
+    width: 80%;                       /* El video ocupa el 80% del ancho de la página */
+    max-width: 100%;                   /* Asegura que el video no se salga del contenedor */
+    height: auto;                     /* Mantiene la relación de aspecto original del video */
+  }
+  /*--------------------------------------------------------------------------------------------------------------------*/
+  
+/* Estilos para el contenedor de la misión */
+.card-container-mision {
+    display: flex;                /* Usamos flexbox para organizar los elementos */
+    align-items: center;          /* Alineamos los elementos verticalmente al centro */
+    justify-content: space-between; /* Espaciamos los elementos para que estén a los extremos */
+    gap: 20px;                    /* Espacio entre los elementos */
+    padding: 20px;                /* Espaciado interno en el contenedor */
+    box-sizing: border-box;       /* Incluye el padding en el tamaño total del contenedor */
+    background-color: #f9f9f9;    /* Fondo suave para el contenedor */
+  }
+  
+  .card-container-mision h1,
+  .card-container-mision p {
+    margin: 0;                    /* Elimina los márgenes por defecto */
+    padding: 0;                   /* Elimina el padding por defecto */
+    flex: 1;                       /* Hace que los elementos de texto (h1 y p) ocupen el espacio restante */
+  }
+  
+  /* Estilo para el título h1 */
+  .card-container-mision h1 {
+    font-size: 2rem;               /* Tamaño del texto del título */
+    color: #333;                   /* Color del texto */
+    font-weight: bold;             /* Negrita en el título */
+    flex: 0 1 40%;                 /* El título ocupará el 40% del espacio */
+  }
+  
+  /* Estilo para el párrafo p */
+  .card-container-mision p {
+    font-size: 1rem;               /* Tamaño de la fuente del párrafo */
+    color: #555;                   /* Color del texto del párrafo */
+    line-height: 1.6;              /* Altura de línea para mayor legibilidad */
+    flex: 0 1 40%;                 /* El párrafo ocupará el 40% del espacio */
+  }
+  
+  /* Estilo para la imagen */
+  .card-container-mision img {
+    max-width: 100%;               /* Asegura que la imagen ocupe el 100% del contenedor */
+    height: auto;                  /* Mantiene la relación de aspecto original de la imagen */
+    flex: 0 1 20%;                 /* La imagen ocupará el 20% del espacio */
+  }
+/*-----------------------------------------------------------------------------------------------------------------------------*/
+  
+
+/* Estilos para el contenedor de la visión */
+.card-container-vision {
+    display: flex;                /* Usamos flexbox para organizar los elementos */
+    align-items: center;          /* Alineamos los elementos verticalmente al centro */
+    justify-content: space-between; /* Espaciamos los elementos para que estén a los extremos */
+    gap: 20px;                    /* Espacio entre los elementos */
+    padding: 20px;                /* Espaciado interno en el contenedor */
+    box-sizing: border-box;       /* Incluye el padding en el tamaño total del contenedor */
+    background-color: #f9f9f9;    /* Fondo suave para el contenedor */
+  }
+  
+  /* Estilo para el título h1 y el párrafo p */
+  .card-container-vision h1,
+  .card-container-vision p {
+    margin: 0;                    /* Elimina los márgenes por defecto */
+    padding: 0;                   /* Elimina el padding por defecto */
+    flex: 1;                       /* Hace que los elementos de texto (h1 y p) ocupen el espacio restante */
+  }
+  
+  /* Estilo para el título h1 */
+  .card-container-vision h1 {
+    font-size: 2rem;               /* Tamaño del texto del título */
+    color: #333;                   /* Color del texto */
+    font-weight: bold;             /* Negrita en el título */
+    flex: 0 1 40%;                 /* El título ocupará el 40% del espacio */
+  }
+  
+  /* Estilo para el párrafo p */
+  .card-container-vision p {
+    font-size: 1rem;               /* Tamaño de la fuente del párrafo */
+    color: #555;                   /* Color del texto del párrafo */
+    line-height: 1.6;              /* Altura de línea para mayor legibilidad */
+    flex: 0 1 40%;                 /* El párrafo ocupará el 40% del espacio */
+  }
+  
+  /* Estilo para la imagen */
+  .card-container-vision img {
+    max-width: 100%;               /* Asegura que la imagen ocupe el 100% del contenedor */
+    height: auto;                  /* Mantiene la relación de aspecto original de la imagen */
+    flex: 0 1 20%;                 /* La imagen ocupará el 20% del espacio */
+  }
+
+  
+  /* Estilos generales para las secciones */
+section {
+  margin-bottom: 40px; /* Espacio entre las secciones */
+}
+
+/* Contenedor de la misión */
+.card-container-mision,
+.card-container-vision {
+  display: flex;              /* Usamos flexbox para organizar los elementos */
+  align-items: center;        /* Alineamos los elementos verticalmente al centro */
+  gap: 20px;                  /* Espacio entre los elementos */
+  padding: 20px;              /* Espaciado interno en el contenedor */
+  background-color: #f9f9f9;  /* Fondo suave para el contenedor */
+  border-radius: 8px;         /* Bordes redondeados para el contenedor */
+  box-sizing: border-box;     /* Incluye el padding en el tamaño total del contenedor */
+  width: 70%;                 /* El contenedor ocupa el 70% del ancho de la pantalla */
+  margin: 0 auto;             /* Centra el contenedor horizontalmente */
+}
+
+/* Estilo para el título h1 y el párrafo p */
+.card-container-mision h1,
+.card-container-mision p,
+.card-container-vision h1,
+.card-container-vision p {
+  margin: 0;                  /* Elimina los márgenes por defecto */
+  padding: 0;                 /* Elimina el padding por defecto */
+}
+
+/* Estilo para los títulos h1 */
+.card-container-mision h1,
+.card-container-vision h1 {
+  font-size: 1.8rem;          /* Tamaño del título */
+  font-weight: bold;          /* Negrita en el título */
+  color: #333;
+  text-align: center;                /* Color del texto */
+}
+
+/* Estilo para los párrafos p */
+.card-container-mision p,
+.card-container-vision p {
+  font-size: 1rem;            /* Tamaño de la fuente del párrafo */
+  color: #555;                /* Color del texto */
+  line-height: 1.6;           /* Altura de línea para mayor legibilidad */
+  margin-bottom: 0;           /* Elimina el margen inferior del párrafo */
+}
+
+/* Estilo para las imágenes */
+.card-container-mision img,
+.card-container-vision img {
+  max-width: 15%;       /* Asegura que las imágenes no se salgan del contenedor */
+  height: auto;          /* Mantiene la relación de aspecto de las imágenes */
+  border-radius: 12px;   /* Bordes redondeados para las imágenes */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Agrega una sombra suave para darle más estilo */
+}
+
+
+
+
+
+
+
+/* Estilo para la sección de valores */
+.SectionValores {
+  display: flex;              /* Usamos Flexbox para organizar los elementos */
+  justify-content: center;    /* Centra todo el contenido dentro de la sección */
+  padding: 40px 20px;         /* Espaciado interno para la sección */
+}
+
+/* Contenedor de valores */
+.card-container-valores {
+  display: flex;              /* Usamos Flexbox para organizar los elementos dentro del contenedor */
+  flex-direction: column;     /* Organiza los elementos en columna */
+  align-items: center;        /* Centra los elementos horizontalmente */
+  width: 100%;                /* Hace que el contenedor abarque el 100% del ancho de la sección */
+  max-width: 90%;             /* Limita el contenedor al 70% del ancho de la página */
+  text-align: center;         /* Centra el texto en los párrafos */
+  background-color: #f9f9f9;  /* Fondo suave para el contenedor */
+  border-radius: 8px;         /* Bordes redondeados para el contenedor */
+  box-sizing: border-box;     /* Incluye el padding en el tamaño total del contenedor */
+  padding: 20px;              /* Espaciado interno en el contenedor */
+}
+
+/* Estilo para la imagen */
+.card-container-valores img {
+  max-width: 50%;             /* La imagen ocupa el 50% de su tamaño original */
+  height: auto;   
+  margin-top: 30px;            /* Mantiene la relación de aspecto de la imagen */
+  margin-bottom: 80px;        /* Agrega un espacio debajo de la imagen */
+  border-radius: 12px;        /* Bordes redondeados para la imagen */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave para la imagen */
+}
+
+/* Estilo para los párrafos */
+.card-container-valores p {
+  font-size: 1rem;            /* Tamaño de fuente de los párrafos */
+  color: #555;                /* Color de texto más suave */
+  line-height: 1.6;           /* Altura de línea para mejorar la legibilidad */
+  width: 100%;                /* Los párrafos ocupan todo el ancho disponible */
+  margin-bottom: 10px;        /* Espacio entre los párrafos */
+  padding: 0 10px;            /* Un poco de padding en los lados de los párrafos */
+  text-align: justify;        /* Justifica el texto para una mejor apariencia */
+}
+
+
+
+
+
+/* Estilo para el contenedor de las tres opciones que sale un modal */
+.options-container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.option {
+  width: 30%;
+  padding: 20px;
+  background-color: #f0f0f0;
+  text-align: center;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+.option:hover {
+  background-color: #d3d3d3;
+}
+
+/* Estilo de los modales */
+.modal {
+  display: none; /* Inicialmente oculto */
+  position: fixed;
+  z-index: 1; /* Asegura que el modal se muestre encima del contenido */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0); /* Fondo semitransparente */
+  background-color: rgba(0, 0, 0, 0.4); /* Fondo con opacidad */
+  padding-top: 60px;
+}
+
+.modal-content {
+  background-color: white;
+  margin: 5% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Ancho del modal */
+  max-width: 600px; /* Ancho máximo */
+  border-radius: 8px;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+/* Estilo común para las secciones con los ids: #nosotros, #modelo, #servicios, #contacto */
+#nosotros, #modelo, #servicio, #contacto {
+  margin: 50px auto;
+  padding: 20px;
+  width: 80%; /* Ajusta el porcentaje de acuerdo a tu necesidad */
+  background-color: #f8f8f8; /* Fondo claro */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para darle profundidad */
+}
+
+/* Títulos dentro de cada sección */
+#nosotros h2, #modelo h2, #servicio h2, #contacto h2 {
+  font-size: 2rem; /* Tamaño del título */
+  text-align: center; /* Centrar el título */
+  color: #333; /* Color del texto */
+  margin-bottom: 20px;
+}
+
+/* Párrafos dentro de cada sección */
+#nosotros p, #modelo p, #servicio p, #contacto p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #555;
+  text-align: justify; /* Justificar texto */
+  margin-bottom: 20px;
+}
+
+/* Estilo de las imágenes dentro de cada sección */
+#modelo img, #nosotros img, #servicio img, #contacto img {
+  width: 100%; /* La imagen ocupa el 100% del ancho */
+  border-radius: 8px; /* Bordes redondeados para las imágenes */
+  margin-top: 20px;
+}
+
+/* Contenedor de las tarjetas en las secciones, por ejemplo en #nosotros o #modelo */
+ #modelo .card-container, #servicio .card-container, #contacto .card-container {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-around;
+}
+
+ #modelo .card, #servicio .card, #contacto .card {
+  background-color: #fff;
+  padding: 20px;
+  width: 30%; /* Ajusta el tamaño de las tarjetas */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para las tarjetas */
+  border-radius: 8px;
+  text-align: center;
+}
+
+#modelo .card h3, #servicio .card h3, #contacto .card h3 {
+  font-size: 1.25rem;
+  color: #333;
+}
+
+
+
+
+
+.ubicacion {
+  display: block; /* Asegura que el contenedor se comporte como bloque */
+  margin: 20px auto;
+  padding: 20px;
+  width: 50%; /* O ajusta el porcentaje que necesites */
+  background-color: #f8f8f8;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.ubicacion h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.ubicacion p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #555;
+}
+
+.maps-link {
+  margin-left: 20px;
+  align-self: flex-start;
+}
+
+.maps-link a {
+  font-size: 1rem;
+  color: #1a73e8;
+  text-decoration: none;
+}
+
+.maps-link a:hover {
+  text-decoration: underline;
+}
+
+.perspectiva{
+  font-size: 2.5rem;
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+  
+}
+
+
+
+
+/* Sección de la tabla de información */
+#tabla-informacion {
+  background-color: #f0f8ff; /* Fondo suave para la sección */
+  padding: 40px 20px; /* Espaciado interno */
+  text-align: center;
+  border-radius: 8px; /* Bordes redondeados */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para darle profundidad */
+  margin: 50px auto; /* Centrar horizontalmente */
+  max-width: 90%; /* Ajustar el ancho máximo */
+}
+
+/* Contenedor principal */
+.tabla-contenedor {
+  display: flex;
+  justify-content: space-around; /* Espaciado igual entre columnas */
+  gap: 20px; /* Espacio entre columnas */
+}
+
+/* Estilo de cada columna */
+.tabla-columna {
+  background-color: #fff; /* Fondo blanco para las columnas */
+  padding: 20px; /* Espaciado interno */
+  border-radius: 8px; /* Bordes redondeados */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para las columnas */
+  width: 30%; /* Ancho de cada columna */
+  text-align: left; /* Alinear el texto a la izquierda */
+}
+
+/* Estilo de los títulos */
+.tabla-columna h3 {
+  font-size: 1.8rem; /* Tamaño del título */
+  color: #007b7f; /* Color principal */
+  margin-bottom: 20px; /* Espaciado debajo del título */
+  text-align: center; /* Centrar el título */
+}
+
+/* Estilo de las listas */
+.tabla-columna ul {
+  list-style-type: none; /* Eliminar viñetas */
+  padding: 0; /* Sin espaciado externo */
+}
+
+.tabla-columna ul li {
+  margin-bottom: 10px; /* Espacio entre elementos */
+}
+
+/* Estilo de los enlaces */
+.tabla-columna ul li a {
+  text-decoration: none; /* Sin subrayado */
+  font-size: 1rem; /* Tamaño del texto */
+  color: #555; /* Color del texto */
+  transition: color 0.3s ease; /* Transición suave para el hover */
+}
+
+.tabla-columna ul li a:hover {
+  color: #007b7f; /* Color en hover */
+  text-decoration: underline; /* Subrayado en hover */
+}
+
+.titulo-informacion {
+  font-size: 2.5rem; /* Tamaño grande para destacar */
+  text-align: center; /* Centrar el título */
+  color: #007b7f; /* Color acorde al diseño */
+  margin-bottom: 20px; /* Espacio inferior para separación */
+  text-transform: uppercase; /* Mayúsculas para énfasis */
+  font-weight: bold; /* Negrita para resaltar */
+  letter-spacing: 1.5px; /* Espaciado entre letras */
+  border-bottom: 3px solid #ddd; /* Línea inferior decorativa */
+  padding-bottom: 10px; /* Espaciado entre el texto y la línea */
+}
